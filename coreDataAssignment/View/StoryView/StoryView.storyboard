@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Story View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="StoryView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="StoryView" customModule="coreDataAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="ytY-wj-v4m">
+                                <rect key="frame" x="187" y="49" width="40" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="q3M-wU-vpf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WP3-td-G4x">
+                                <rect key="frame" x="10" y="90" width="32.5" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="L7I-iz-Lge"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBd-oB-faY">
+                                <rect key="frame" x="10" y="118" width="51.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aCl-Fs-pMf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKO-wL-tTy">
+                                <rect key="frame" x="10" y="149" width="44" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19.5" id="boR-iw-0by"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRh-wd-tqM">
+                                <rect key="frame" x="10" y="188.5" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XKO-wL-tTy" firstAttribute="leading" secondItem="HBd-oB-faY" secondAttribute="leading" id="6mQ-8f-jGr"/>
+                            <constraint firstItem="HBd-oB-faY" firstAttribute="top" secondItem="WP3-td-G4x" secondAttribute="bottom" constant="10" id="C23-7n-Vlm"/>
+                            <constraint firstItem="VRh-wd-tqM" firstAttribute="top" secondItem="XKO-wL-tTy" secondAttribute="bottom" constant="20" id="EUy-EZ-2wn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="VRh-wd-tqM" secondAttribute="bottom" constant="10" id="NGB-2J-01e"/>
+                            <constraint firstItem="XKO-wL-tTy" firstAttribute="top" secondItem="HBd-oB-faY" secondAttribute="bottom" constant="10" id="NdD-qD-uYW"/>
+                            <constraint firstItem="HBd-oB-faY" firstAttribute="leading" secondItem="WP3-td-G4x" secondAttribute="leading" id="WB6-kn-qxc"/>
+                            <constraint firstItem="ytY-wj-v4m" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="5" id="Xuz-BY-ofK"/>
+                            <constraint firstItem="WP3-td-G4x" firstAttribute="top" secondItem="ytY-wj-v4m" secondAttribute="bottom" constant="20" id="gdh-29-SRL"/>
+                            <constraint firstItem="ytY-wj-v4m" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="j3y-lY-ZjK"/>
+                            <constraint firstItem="VRh-wd-tqM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="jy8-YJ-Yus"/>
+                            <constraint firstItem="WP3-td-G4x" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="q8D-F4-a0b"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VRh-wd-tqM" secondAttribute="trailing" constant="10" id="vkx-zr-cFJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="storyAuthor" destination="HBd-oB-faY" id="dnL-97-5jI"/>
+                        <outlet property="storyBody" destination="VRh-wd-tqM" id="VaJ-G3-h1Q"/>
+                        <outlet property="storyDate" destination="WP3-td-G4x" id="g44-Qi-NTE"/>
+                        <outlet property="storyGenre" destination="XKO-wL-tTy" id="wRN-bu-JXE"/>
+                        <outlet property="storyTitle" destination="ytY-wj-v4m" id="7ZA-bP-fMt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
