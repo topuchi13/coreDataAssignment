@@ -13,11 +13,13 @@ class StoryCell: UITableViewCell {
     @IBOutlet private var storyDate: UILabel!
     @IBOutlet private var storyAuthor: UILabel!
     @IBOutlet private var storyGenre: UILabel!
-    
+    @IBOutlet private var initialsView: UIView!
+    @IBOutlet private var userInitials: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        initialsView.layer.cornerRadius = 40.0
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -27,11 +29,14 @@ class StoryCell: UITableViewCell {
     }
     
     
-    func makeNew(with story: StoryObject){
+    func makeNew(with story: StoryModel){
         storyTitle.text = story.name
-        storyDate.text = "Date: \(story.date)"
-        storyAuthor.text = "Author: \(story.author)"
-        storyGenre.text = "Genre: \(story.genre)"
+        if let initial = story.name.first {
+            userInitials.text = "\(initial)"
+        }
+        storyDate.text = "\(story.date)"
+        storyAuthor.text = "ავტორი: \(story.author)"
+        storyGenre.text = "ჟანრი: \(story.genre)"
     }
     
     

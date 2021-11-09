@@ -8,10 +8,11 @@
 import Foundation
 
 
-struct StoryObject {
+struct StoryModel {
     var name: String
     var date: String
     var author: String
     var genre: String
     var body: String
+    var userEmail: String
 }

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro.ttf">
+            <string>SFPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="LoginVC" customModule="coreDataAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jdC-hp-7Qt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKt-GP-2fR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YnB-I4-W6p">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="მობილურის ნომრით ავტორიზაცია" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmN-59-Veq">
+                                                <rect key="frame" x="32" y="175.5" width="286" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="WHb-47-uNc">
+                                                <rect key="frame" x="32" y="236" width="350" height="100"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="g1g-xk-00g">
+                                                        <rect key="frame" x="0.0" y="0.0" width="350" height="44"/>
+                                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="c9D-Gu-JMG"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="go" enablesReturnKeyAutomatically="YES" smartDashesType="yes" textContentType="email"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="პაროლი" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KEe-UB-xQd">
+                                                        <rect key="frame" x="0.0" y="56" width="350" height="44"/>
+                                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="nDQ-ua-emr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                                        <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="yes" textContentType="password"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfo-i9-7GR">
+                                                <rect key="frame" x="32" y="64" width="160" height="95.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5p-Wo-lsZ">
+                                                <rect key="frame" x="32" y="346" width="350" height="32"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="არ ხართ რეგისტრირებული?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="b9t-VG-Q1c">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="32"/>
+                                                        <fontDescription key="fontDescription" name="SFPro-Regular" family="SF Pro" pointSize="15"/>
+                                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46q-sR-gKo">
+                                                        <rect key="frame" x="207" y="0.0" width="143" height="32"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="რეგისტრაცია">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="goToRegistration:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Meo-oM-c4h"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8S-YI-BXA">
+                                                <rect key="frame" x="32" y="402" width="350" height="50"/>
+                                                <color key="backgroundColor" red="0.043137254899999998" green="0.29411764709999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="FV1-Tr-rJM"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="შესვლა" titleAlignment="trailing">
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="loginPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0Uq-t7-S23"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="gfo-i9-7GR" firstAttribute="top" secondItem="YnB-I4-W6p" secondAttribute="top" constant="64" id="2GR-mG-Vu1"/>
+                                            <constraint firstItem="x5p-Wo-lsZ" firstAttribute="leading" secondItem="WHb-47-uNc" secondAttribute="leading" id="7sH-oq-dw4"/>
+                                            <constraint firstItem="WHb-47-uNc" firstAttribute="leading" secondItem="YnB-I4-W6p" secondAttribute="leading" constant="32" id="99C-fX-Jvy"/>
+                                            <constraint firstItem="x5p-Wo-lsZ" firstAttribute="top" secondItem="WHb-47-uNc" secondAttribute="bottom" constant="10" id="Ksz-Vt-Zr2"/>
+                                            <constraint firstAttribute="trailing" secondItem="WHb-47-uNc" secondAttribute="trailing" constant="32" id="M0C-ft-Lj1"/>
+                                            <constraint firstAttribute="height" constant="700" id="Qw8-YK-Nkt"/>
+                                            <constraint firstItem="cmN-59-Veq" firstAttribute="leading" secondItem="gfo-i9-7GR" secondAttribute="leading" id="X19-fI-OZW"/>
+                                            <constraint firstItem="cmN-59-Veq" firstAttribute="top" secondItem="gfo-i9-7GR" secondAttribute="bottom" constant="16" id="ihs-fc-H0g"/>
+                                            <constraint firstItem="gfo-i9-7GR" firstAttribute="leading" secondItem="YnB-I4-W6p" secondAttribute="leading" constant="32" id="ixf-Kx-9nK"/>
+                                            <constraint firstItem="x5p-Wo-lsZ" firstAttribute="trailing" secondItem="WHb-47-uNc" secondAttribute="trailing" id="mhM-xW-Glw"/>
+                                            <constraint firstItem="WHb-47-uNc" firstAttribute="top" secondItem="cmN-59-Veq" secondAttribute="bottom" constant="40" id="sPR-pc-fEJ"/>
+                                            <constraint firstItem="F8S-YI-BXA" firstAttribute="top" secondItem="x5p-Wo-lsZ" secondAttribute="bottom" constant="24" id="t05-Io-IkK"/>
+                                            <constraint firstItem="F8S-YI-BXA" firstAttribute="trailing" secondItem="WHb-47-uNc" secondAttribute="trailing" id="tzD-OV-t8G"/>
+                                            <constraint firstItem="F8S-YI-BXA" firstAttribute="leading" secondItem="WHb-47-uNc" secondAttribute="leading" id="yr5-oB-OFY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YnB-I4-W6p" firstAttribute="trailing" secondItem="6GJ-ha-y4m" secondAttribute="trailing" id="F69-uf-r8n"/>
+                                    <constraint firstItem="YnB-I4-W6p" firstAttribute="width" secondItem="ptd-Le-3m2" secondAttribute="width" id="FUs-b6-rgt"/>
+                                    <constraint firstItem="YnB-I4-W6p" firstAttribute="leading" secondItem="6GJ-ha-y4m" secondAttribute="leading" id="Faa-41-yhP"/>
+                                    <constraint firstItem="YnB-I4-W6p" firstAttribute="top" secondItem="6GJ-ha-y4m" secondAttribute="top" id="dgO-xD-1zb"/>
+                                    <constraint firstItem="YnB-I4-W6p" firstAttribute="bottom" secondItem="6GJ-ha-y4m" secondAttribute="bottom" id="e5c-oR-QSl"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="6GJ-ha-y4m"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ptd-Le-3m2"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aDI-ir-N7f"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QKt-GP-2fR" firstAttribute="top" secondItem="aDI-ir-N7f" secondAttribute="top" id="5Q3-TB-99M"/>
+                            <constraint firstItem="aDI-ir-N7f" firstAttribute="trailing" secondItem="QKt-GP-2fR" secondAttribute="trailing" id="I8N-su-aSV"/>
+                            <constraint firstItem="QKt-GP-2fR" firstAttribute="leading" secondItem="aDI-ir-N7f" secondAttribute="leading" id="T5r-q5-uQy"/>
+                            <constraint firstItem="aDI-ir-N7f" firstAttribute="bottom" secondItem="QKt-GP-2fR" secondAttribute="bottom" id="psu-W6-dvv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="g1g-xk-00g" id="7KM-oC-J1P"/>
+                        <outlet property="loginButton" destination="F8S-YI-BXA" id="aR8-K5-N6U"/>
+                        <outlet property="password" destination="KEe-UB-xQd" id="VJP-Nu-ikh"/>
+                        <outletCollection property="allInputs" destination="g1g-xk-00g" collectionClass="NSMutableArray" id="9dX-Y2-VIm"/>
+                        <outletCollection property="allInputs" destination="KEe-UB-xQd" collectionClass="NSMutableArray" id="aMk-Xa-gcG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

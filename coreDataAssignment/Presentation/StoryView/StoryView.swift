@@ -21,11 +21,11 @@ class StoryView: UIViewController {
         super.viewDidLoad()
     }
     
-    func makeNew(with story: StoryObject){
+    func makeNew(with story: StoryModel){
         storyTitle.text = story.name
-        storyDate.text = "Date: \(story.date)"
-        storyAuthor.text = "Author: \(story.author)"
-        storyGenre.text = "Genre: \(story.genre)"
+        storyDate.text = "\(story.date)"
+        storyAuthor.text = "ავტორი: \(story.author)"
+        storyGenre.text = "ჟანრი: \(story.genre)"
         storyBody.text = story.body
         storyBody.sizeToFit()
     }

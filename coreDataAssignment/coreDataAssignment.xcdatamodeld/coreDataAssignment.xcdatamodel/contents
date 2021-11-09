@@ -4,10 +4,18 @@
         <attribute name="author" optional="YES" attributeType="String"/>
         <attribute name="body" optional="YES" attributeType="String"/>
         <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
         <attribute name="genre" optional="YES" attributeType="String"/>
         <attribute name="header" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="surname" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
-        <element name="Story" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="Story" positionX="-66.58984375" positionY="-190.609375" width="128" height="133"/>
+        <element name="User" positionX="-63" positionY="18" width="128" height="89"/>
     </elements>
 </model>

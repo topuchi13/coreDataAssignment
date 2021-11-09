@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Greeting Screen-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="GreetingScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="GreetingScreen" customModule="coreDataAssignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="P9w-Uj-ejf">
+                                <rect key="frame" x="92.5" y="348" width="229.5" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zf2-iu-VvH">
+                                        <rect key="frame" x="0.0" y="0.0" width="229.5" height="50"/>
+                                        <color key="backgroundColor" red="0.043137254899999998" green="0.29411764709999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="რეგისტრაცია">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="T0z-4R-Hr0" kind="presentation" modalPresentationStyle="fullScreen" id="cCU-r7-6Tr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5Z-5K-Chf">
+                                        <rect key="frame" x="44" y="150" width="141.5" height="50"/>
+                                        <color key="backgroundColor" red="0.043137254899999998" green="0.29411764709999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="შესვლა">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="30"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="5hg-y7-9nM" kind="presentation" modalPresentationStyle="fullScreen" id="InB-eE-8nE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="სხვეისბუქი" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="yf3-az-rj7">
+                                <rect key="frame" x="97" y="94" width="220" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.043137254899999998" green="0.29411764709999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="რაღაცნაირი სოციალური ქსელი" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKy-1G-kST">
+                                <rect key="frame" x="76" y="150" width="262" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="P9w-Uj-ejf" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="8y7-7q-ZC8"/>
+                            <constraint firstItem="EKy-1G-kST" firstAttribute="top" secondItem="yf3-az-rj7" secondAttribute="bottom" constant="8" symbolic="YES" id="K54-Vl-2zd"/>
+                            <constraint firstItem="yf3-az-rj7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="Zqn-FY-VTR"/>
+                            <constraint firstItem="yf3-az-rj7" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="cAG-dF-dCj"/>
+                            <constraint firstItem="EKy-1G-kST" firstAttribute="centerX" secondItem="yf3-az-rj7" secondAttribute="centerX" id="iJq-Il-A3n"/>
+                            <constraint firstItem="P9w-Uj-ejf" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="yUN-TU-IXK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="allButtons" destination="zf2-iu-VvH" collectionClass="NSMutableArray" id="uam-db-8nZ"/>
+                        <outletCollection property="allButtons" destination="F5Z-5K-Chf" collectionClass="NSMutableArray" id="Tog-Sl-p5q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="52"/>
+        </scene>
+        <!--RegistrationVC-->
+        <scene sceneID="Ayr-mS-qOK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RegistrationVC" referencedIdentifier="RegistrationVC" id="T0z-4R-Hr0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yI5-cQ-a5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="-62"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="tlg-fo-WWO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LoginVC" referencedIdentifier="LoginVC" id="5hg-y7-9nM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tik-b9-XYu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="145"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

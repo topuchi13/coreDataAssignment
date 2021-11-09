@@ -16,17 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="ytY-wj-v4m">
-                                <rect key="frame" x="187" y="49" width="40" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="სათაური" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="ytY-wj-v4m">
+                                <rect key="frame" x="162" y="64" width="90" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="q3M-wU-vpf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.043137254899999998" green="0.29411764709999999" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WP3-td-G4x">
-                                <rect key="frame" x="10" y="90" width="32.5" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="თარიღი" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WP3-td-G4x">
+                                <rect key="frame" x="16" y="105" width="69.5" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="L7I-iz-Lge"/>
                                 </constraints>
@@ -34,8 +34,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBd-oB-faY">
-                                <rect key="frame" x="10" y="118" width="51.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ავტორი" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBd-oB-faY">
+                                <rect key="frame" x="16" y="133" width="63.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="aCl-Fs-pMf"/>
                                 </constraints>
@@ -43,8 +43,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKO-wL-tTy">
-                                <rect key="frame" x="10" y="149" width="44" height="19.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ჟანრი" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKO-wL-tTy">
+                                <rect key="frame" x="16" y="164" width="47" height="19.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="19.5" id="boR-iw-0by"/>
                                 </constraints>
@@ -52,8 +52,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRh-wd-tqM">
-                                <rect key="frame" x="10" y="188.5" width="394" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="შინაარსი" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRh-wd-tqM">
+                                <rect key="frame" x="16" y="203.5" width="382" height="20.5"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -68,12 +68,12 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="VRh-wd-tqM" secondAttribute="bottom" constant="10" id="NGB-2J-01e"/>
                             <constraint firstItem="XKO-wL-tTy" firstAttribute="top" secondItem="HBd-oB-faY" secondAttribute="bottom" constant="10" id="NdD-qD-uYW"/>
                             <constraint firstItem="HBd-oB-faY" firstAttribute="leading" secondItem="WP3-td-G4x" secondAttribute="leading" id="WB6-kn-qxc"/>
-                            <constraint firstItem="ytY-wj-v4m" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="5" id="Xuz-BY-ofK"/>
                             <constraint firstItem="WP3-td-G4x" firstAttribute="top" secondItem="ytY-wj-v4m" secondAttribute="bottom" constant="20" id="gdh-29-SRL"/>
                             <constraint firstItem="ytY-wj-v4m" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="j3y-lY-ZjK"/>
-                            <constraint firstItem="VRh-wd-tqM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="jy8-YJ-Yus"/>
-                            <constraint firstItem="WP3-td-G4x" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="q8D-F4-a0b"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VRh-wd-tqM" secondAttribute="trailing" constant="10" id="vkx-zr-cFJ"/>
+                            <constraint firstItem="VRh-wd-tqM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="jy8-YJ-Yus"/>
+                            <constraint firstItem="ytY-wj-v4m" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="psg-0B-Vn6"/>
+                            <constraint firstItem="WP3-td-G4x" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="q8D-F4-a0b"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VRh-wd-tqM" secondAttribute="trailing" constant="16" id="vkx-zr-cFJ"/>
                         </constraints>
                     </view>
                     <connections>
